@@ -13,7 +13,8 @@ app "web" {
     use "docker" {}
     registry {
       use "docker" {
-        local = true
+        image = "ttl.sh/jgwhite-testing-kennington-web"
+        tag = "1h"
       }
     }
   }
