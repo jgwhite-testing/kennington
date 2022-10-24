@@ -11,6 +11,11 @@ runner {
 app "web" {
   build {
     use "docker" {}
+    registry {
+      use "docker" {
+        local = true
+      }
+    }
   }
   deploy {
     use "docker" {}
